@@ -57,7 +57,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
       - name: Update function code
-          run:|
+        run: |
             aws lambda update-function-code \
               --function-name my-function \
               --s3-bucket mybucketspd9rtu-94utjsdgs94jpserf \ 
